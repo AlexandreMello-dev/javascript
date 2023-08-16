@@ -5,4 +5,8 @@ console.log("Trabalho com variáveis");
 const idade = 29;
 const nome = "Alexandre"
 
-console.log(idade)
+// não fazer
+
+mes = "Janeiro";
+
+
