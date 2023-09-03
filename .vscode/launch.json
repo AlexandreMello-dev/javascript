@@ -12,6 +12,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\8-looops.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "9-teste",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\9-teste.js"
         }
     ]
 }
