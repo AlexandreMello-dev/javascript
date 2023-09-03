@@ -1,7 +1,7 @@
-let numero = 7;
+const idade = 18;
 
-if(numero > 10){
-    console.log("O número $(numero) é maior que 10");
+if(idade > 18 || idade == 18){
+    console.log("Você pode dirigir!");
 }else{
-    console.log("O número   é menor que 10");
-}
+    console.log("Desculpe, você ainda não pode dirigir.");
+};
