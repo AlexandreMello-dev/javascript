@@ -1,17 +1,23 @@
-// const soma = 10 + 10;
-// const multiplicacao = 10 * 10;
-// const operacao = (soma + multiplicacao) + 10;
-// console.log(operacao)
+let senha;
 
-var respostaDeTudo = 42
-let idade = 29
-const pi = 3.14
+senhas = new Array (
 
-{
-    var respostaDeTudo = 3.14
-    let idade = 42
-    const pi = 29
-    console.log(respostaDeTudo, idade, pi)
+    'minhanovasenha',
+    'eusoualexandre',
+    'MEUNOVOMUNDO',
+    'minhasenha',
+)
 
+let cont = 0;
+
+while (cont <= 5 ) {
+    if (senhas == 'MEUNOVOMUNDO'){
+        console.log(`A achamos a sua senha no indice ${cont}`);
+        break
+    } else {
+        cont += 1
+        console.log("Achamos sua senha")
+        
+    }
+ 
 }
-console.log(respostaDeTudo, idade, pi)
