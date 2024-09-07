@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de maior de idade</title>
+</head>
+<body>
+    <h1>Verificação de maior de idade</h1>
+    <p>Digete sua idade: <input type="number" name="textidade" id="textidade"> <input type="button" value="Verificação" onclick="maiorDeIdade()"></p>
+    <div id="res">
+
+    </div>
+    <script>
+        function maiorDeIdade(){
+            var idadetxt = document.querySelector("input#textidade")
+            var idade = Number(idadetxt.value)
+            res.innerHTML = `Essa é sua idade ${idade}`
+            if (idade >= 18) {
+                res.innerHTML = `<p>Você é <strong>maior</strong> de idade</p>`
+            } else {
+                res.innerHTML = `<p>Você é <strong>menor</strong> de idade</p>`           
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Verificação de Faixa Etária</title>
+</head>
+<body>
+    <h1> Verificação de Faixa Etária</h1>
+    <p>Digete sua idade: <input type="number" name="txtNum" id="txtNum"><input type="button" value="Vericar" onclick="VerIdade()"></p>
+    <div id="res">
+
+    </div>
+    <script>
+        function VerIdade(){
+            var textidade = window.document.querySelector("input#txtNum")
+            var idade = Number(textidade.value)
+            res.innerHTML = `Essa é sua idade ${idade}`
+            if (idade <= 12) {
+                res.innerHTML = `Você é uma Criança`
+            } else if ( idade <= 17){
+                res.innerHTML = `Você é um Adolescente`
+            } else if (idade >= 18 && idade <= 64){
+                res.innerHTML = 'Você é um Adulto'
+            } else {
+                res.innerHTML = "você é um Idoso"
+            }
+        }
+    </script>
+</body>
+</html>
