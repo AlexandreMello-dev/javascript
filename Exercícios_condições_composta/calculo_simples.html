@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo simples</title>
+    <style>
+        body{
+            background-color: rgba(22, 22, 194, 0.753);
+            font: normal 13pt Arial;
+        }
+
+        header {
+            color: white;
+            text-align: center;
+        }
+        section {
+            background-color: white;
+            padding: 16px;
+            border-radius: 10px;
+            width: 500px;
+            margin: auto;
+        }
+        input {
+            width: 65px;    
+        }
+        
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Calculo Simples</h1>
+    </header>
+    <section>
+        <div>
+            <p>Digete primeiro número: <input type="number" name="txtnum1" id="txtnum1">
+            <p>Tipo de operação: <input type="text" name="txtope" id="txtope"></p>
+            <p>Digete segundo número: <input type="number" name="txtnum2" id="txtnum2"></p>
+            <p><input type="button" value="Calcular" onclick="calcular()"></p>
+        </div>
+        <div id="res">
+        </div>
+    </section>
+    <script>
+        function calcular(){
+            var txtnum1 = document.querySelector('input#txtnum1')
+            var txtnum2 = document.querySelector('input#txtnum2')
+            var txtope = document.querySelector('input#txtope')
+            var num1 = Number(txtnum1.value)
+            var num2 = Number(txtnum2.value)
+            var operador = String(txtope.value)
+            if (operador === "adição"){
+                var soma = num1 + num2
+                res.innerHTML = `O resultado foi: ${soma}`
+            } else if (operador === "subtracao"){
+                var soma = num1 - num2
+                res.innerHTML = `O resultado foi: ${soma}`
+            } else if (operador === "multiplicacao") {
+                var soma = num1 * num2
+                res.innerHTML = `O resultado foi: ${soma}`
+            } else {
+                window.alert("[ERRO] operador invalido!")
+            }
+        }
+    </script>
+</body>
+</html>

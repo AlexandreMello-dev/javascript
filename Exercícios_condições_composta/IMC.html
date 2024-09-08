@@ -22,7 +22,6 @@
             var peso = Number(pesotxt.value)
             res.innerHTML += `<p>Essa é seu peso <strong>${peso}</strong></p>`
             var imc = peso / (altura * altura)
-            res.innerHTML = `Resultado ${imc}`
             if (imc <= 18.5){
                 res.innerHTML += "Abaixo do peso"
             } else if (imc <= 24.9){
