@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Senha</title>
+    <style>
+        body {
+            background-color: rgba(137, 43, 226, 0.651);
+        }
+
+        section {
+            background-color: white;
+            padding: 15px;
+            border-radius: 15px;
+            text-align: center;
+            width: 500px;
+            margin: auto
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        ::placeholder {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador senha</h1>
+    <section>
+        <p>Digete sua senha: <input type="password" name="txtsenha" id="txtsenha" placeholder="8 digitos"></p>
+        <p><input type="button" value="Confirmar" onclick="verificarSenha()"></p>
+        <div id="res">
+
+        </div>
+    </section>
+    
+    <script>
+        function verificarSenha(){
+            var txtsenha = document.querySelector("input#txtsenha")
+            var senha = txtsenha.value
+            if (senha.length >= 8){
+                res.innerHTML = "[ERRO] senha invalida"
+                window.alert ("[ERRO] senha invalida")
+            } else {
+                res.innerHTML = "Senha Válida!"
+            }
+        }
+    </script>
+</body>
+</html>
