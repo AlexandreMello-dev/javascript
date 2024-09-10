@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validar Email</title>
+    <style>
+        body {
+            background-color: rgba(14, 68, 247, 0.658);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: auto;
+            width: 500px;
+            text-align: center;
+        }
+        #res {
+            background-color: rgba(14, 68, 247, 0.658);
+            color: white;
+            width: 300px;
+            padding: 15px;
+            margin: auto;
+            margin-top: 5px;
+            border-radius: 15px
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Validador de Email
+    </h1>
+    <section>
+        <p>Digete seu Email: <input type="text" name="txtemail" id="txtemail" placeholder="exemplo@email.com" min="0"></p>
+        <input type="button" value="verificar" onclick="VerificadorEmail()">
+        <div id ="res">
+    
+        </div>
+    </section>
+    <script>
+        function VerificadorEmail(){
+            var txtemail = document.querySelector("input#txtemail")
+            var email = txtemail.value
+            if (email === ""){
+                window.alert("[ERRO] Digete seu email!")
+            } else if (email.includes("@") && email.includes(".com")){
+                res.innerHTML = 'Email valido, está tudo certo! 👍'
+            } else {
+                window.alert("Email invalido")
+            }
+
+        }
+    </script>
+</body>
+</html>
