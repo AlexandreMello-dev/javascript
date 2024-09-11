@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 255, 0.555);
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            width: 500px;
+            margin: auto;
+        }
+        
+        p {
+            text-align: center;
+        }
+
+        #txtNtabuada {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Tabuada inteligente
+    </h1>
+    <section>
+        <p>
+            Digete um que deseja ver a tabuada: <input type="number" name="txtNtabuada" id="txtNtabuada" min="0" max="10">
+        </p>
+        <p>
+            <input type="button" value="Calcular" onclick="Calcular()">
+        </p>
+        <div id = res>
+            
+        </div>
+    </section>
+    <script>
+        function Calcular(){
+            var txtnum = document.querySelector('input#txtNtabuada')
+            var num = Number(txtnum.value)
+            for (var c = 1; c <= 10; c++){
+                let num2 = c
+                res.innerHTML += `<p>${c} X ${num} = ${num2 * num}</p>`
+            }
+        }
+    </script>
+</body>
+</html>
