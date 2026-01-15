@@ -7,4 +7,4 @@ function retangulo(num){
     }
 }
 
-retangulo(4)
+retangulo(55)
