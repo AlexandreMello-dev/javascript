@@ -1,5 +1,7 @@
-function saudacao(){
-
+const pessoal = {
+    nome: "Alexandre",
+    sobrenome: "Gomes de Mello",
+    idade: 24
 }
 
-saudacao();
+console.log(pessoal.nome)
