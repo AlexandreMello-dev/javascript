@@ -1,7 +1,10 @@
-const pessoal = {
-    nome: "Alexandre",
-    sobrenome: "Gomes de Mello",
-    idade: 24
+const pessoa1 = {
+    nome: "alexandre",
+    idade: 26,
+
+    fala(){
+        console.log(`Meu nome é ${this.nome}, e tenho ${this.idade}`)
+    }
 }
 
-console.log(pessoal.nome)
+pessoa1.fala()
